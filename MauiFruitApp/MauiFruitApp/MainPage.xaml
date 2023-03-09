@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiFruitApp.MainPage">
+             x:Class="MauiFruitApp.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <StackLayout>
+        <Button Text="Navigate to Page2" x:Name="BtnMoveToPage2" Clicked="BtnMoveToPage2_Clicked"></Button>
+    </StackLayout>
+
 
 
 
     <!--Notes: ColumnSpan / RowSpan -->
-    <Grid RowDefinitions="100, Auto,*" ColumnDefinitions="*,*">
+    <!--<Grid RowDefinitions="100, Auto,*" ColumnDefinitions="*,*">
         <Button Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"  Text="Row0,Col0" BackgroundColor="Orange"></Button>
         <Button Grid.Row="0" Grid.Column="1" Text="Row0,Col1" BackgroundColor="Red"></Button>
         <Button Grid.Row="1" Grid.Column="1" Text="Row1,Col1" FontSize="Small" BackgroundColor="Blue"></Button>
         <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Row2,Col0" BackgroundColor="Pink"></Button>
-    </Grid>
+    </Grid>-->
 
     <!--Notes:
             RowDefinitions="100, Auto,*" => 100 = units in size, Auto = Fit based on control, * = Fill the remaining space available.
