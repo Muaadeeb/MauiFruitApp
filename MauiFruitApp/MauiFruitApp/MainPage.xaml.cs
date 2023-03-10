@@ -33,7 +33,7 @@ public partial class MainPage : ContentPage
     private void Fruits_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
         var selectedItem = e.SelectedItem as Fruit;
-        Navigation.PushAsync(new FruitDetail(selectedItem.Name, selectedItem.ImageName, selectedItem.Sentence));
+        Navigation.PushAsync(new FruitDetail(selectedItem));
     }
 
 
