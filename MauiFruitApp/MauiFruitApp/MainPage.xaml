@@ -4,20 +4,15 @@
              x:Class="MauiFruitApp.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <CollectionView x:Name="Fruits">
+    <CollectionView x:Name="Fruits" SelectionChanged="Fruits_SelectionChanged" SelectionMode="Single">
         <CollectionView.ItemsLayout>
-            <GridItemsLayout Orientation="Vertical" Span="2"></GridItemsLayout>
-
-
+            <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="20" VerticalItemSpacing="20"></GridItemsLayout>
         </CollectionView.ItemsLayout>
-
-
-
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                    <StackLayout Margin="20" Padding="10">
-                        <Image Source="{Binding ImageName}" HeightRequest="60" WidthRequest="60"></Image>
-                        <Label Text="{Binding Name}" FontSize="Medium"></Label>
+                    <StackLayout Margin="20" Padding="10" BackgroundColor="LightGray">
+                        <Image HorizontalOptions="Center" Source="{Binding ImageName}" HeightRequest="60" WidthRequest="60"></Image>
+                    <Label HorizontalOptions="Center" Text="{Binding Name}" FontSize="Medium"></Label>
                     </StackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>

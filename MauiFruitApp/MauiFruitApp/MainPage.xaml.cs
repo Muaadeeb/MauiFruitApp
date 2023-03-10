@@ -30,6 +30,14 @@ public partial class MainPage : ContentPage
         Fruits.ItemsSource = fruits;
 	}
 
+    private void Fruits_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        var selectedItem = e.CurrentSelection.FirstOrDefault() as Fruit;
+        if (selectedItem == null) return;
+        Navigation.PushAsync(new FruitDetail(selectedItem));
+        ((CollectionView)sender).SelectedItem = null;
+    }
+
     //private void Fruits_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     //{
     //    var selecteditem = e.SelectedItem as Fruit;
