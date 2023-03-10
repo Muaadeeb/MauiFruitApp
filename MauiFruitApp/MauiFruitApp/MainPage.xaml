@@ -4,9 +4,23 @@
              x:Class="MauiFruitApp.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <ListView x:Name="Fruits"></ListView>
+    <ListView x:Name="Fruits">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="20" Padding="10">
+                        <Image HeightRequest="60" WidthRequest="60"></Image>
+                        <Label FontSize="Medium"></Label>
 
 
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+    </ListView>
+
+    <!--<ListView x:Name="Fruits"></ListView>-->
 
     <!--<StackLayout Margin="20" Padding="20">
         <Entry Placeholder="Enter User Name" x:Name="EnterUserName"></Entry>
