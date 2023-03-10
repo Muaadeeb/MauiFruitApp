@@ -4,15 +4,13 @@
              x:Class="MauiFruitApp.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <ListView x:Name="Fruits" HasUnevenRows="true">
+    <ListView x:Name="Fruits" HasUnevenRows="true" ItemSelected="Fruits_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <StackLayout Margin="20" Padding="10">
                         <Image Source="{Binding ImageName}" HeightRequest="60" WidthRequest="60"></Image>
                         <Label Text="{Binding Name}" FontSize="Medium"></Label>
-
-
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>
