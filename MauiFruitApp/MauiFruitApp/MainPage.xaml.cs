@@ -9,7 +9,8 @@ public partial class MainPage : ContentPage
 
     private void BtnMoveToPage2_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new Page2());
+        //Navigation.PushAsync(new Page2());
+        Navigation.PushModalAsync(new Page2());
     }
 }
 

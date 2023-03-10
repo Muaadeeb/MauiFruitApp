@@ -7,8 +7,13 @@ public partial class Page2 : ContentPage
 		InitializeComponent();
 	}
 
-    private void BtnNavigateBack_Clicked(object sender, EventArgs e)
+    private void TapNavigateBack_Tapped(object sender, TappedEventArgs e)
     {
-        Navigation.PopAsync();
+        Navigation.PopModalAsync();
     }
+
+    //private void BtnNavigateBack_Clicked(object sender, EventArgs e)
+    //{
+    //    Navigation.PopAsync();
+    //}
 }

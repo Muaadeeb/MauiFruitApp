@@ -31,6 +31,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<!--if a build error happens and referenced the first item in this group - issue may actually be due to adding images in the image folder and the system not updating the MauiImage Includes.  So do it manually and then rebuild-->
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
@@ -39,6 +40,8 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Include="Resources\Images\lambo.jfif" />
+		<MauiImage Include="Resources\Images\timingledue.png" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->

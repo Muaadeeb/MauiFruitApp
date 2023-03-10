@@ -6,11 +6,8 @@
 
 
     <StackLayout>
-        <Button Text="Navigate to Page2" x:Name="BtnMoveToPage2" Clicked="BtnMoveToPage2_Clicked"></Button>
+        <Button Text="Navigate to Page2a" x:Name="BtnMoveToPage2" Clicked="BtnMoveToPage2_Clicked"></Button>
     </StackLayout>
-
-
-
 
     <!--Notes: ColumnSpan / RowSpan -->
     <!--<Grid RowDefinitions="100, Auto,*" ColumnDefinitions="*,*">
