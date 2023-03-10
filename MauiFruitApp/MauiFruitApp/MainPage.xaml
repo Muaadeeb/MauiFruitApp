@@ -4,10 +4,14 @@
              x:Class="MauiFruitApp.MainPage"
              NavigationPage.HasNavigationBar="False">
 
-    <StackLayout Margin="20" Padding="20">
+    <ListView x:Name="Fruits"></ListView>
+
+
+
+    <!--<StackLayout Margin="20" Padding="20">
         <Entry Placeholder="Enter User Name" x:Name="EnterUserName"></Entry>
         <Button Text="Go" x:Name="BtnGoToPage2" Clicked="BtnGoToPage2_Clicked"></Button>
-    </StackLayout>
+    </StackLayout>-->
 
     <!--<StackLayout>
         <Button Text="Navigate to Page2a" x:Name="BtnMoveToPage2" Clicked="BtnMoveToPage2_Clicked"></Button>
