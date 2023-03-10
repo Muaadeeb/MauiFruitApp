@@ -32,8 +32,10 @@ public partial class MainPage : ContentPage
 
     private void Fruits_ItemSelected(object sender, SelectedItemChangedEventArgs e)
     {
-        var selectedItem = e.SelectedItem as Fruit;
-        Navigation.PushAsync(new FruitDetail(selectedItem));
+        var selecteditem = e.SelectedItem as Fruit;
+        if (selecteditem == null) return;
+        Navigation.PushAsync(new FruitDetail(selecteditem));
+        ((ListView)sender).SelectedItem = null;
     }
 
 
