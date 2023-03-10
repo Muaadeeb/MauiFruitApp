@@ -2,9 +2,25 @@
 
 public partial class MainPage : ContentPage
 {
-    private readonly List<string> fruits = new List<string>()
+    private readonly List<Fruit> fruits = new List<Fruit>()
     {
-        "Apple", "Banana", "Coconut", "Grape", "Guava", "Kiwi", "Mango", "Melon"
+        new Fruit(){Name = "Apple", ImageName = "apple.png", Sentence = "My Mom's apple pie is the best.  Have you tried it?"},
+        new Fruit(){Name = "Apricot", ImageName = "apricot.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Banana", ImageName = "banana.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Coconut", ImageName = "coconut.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Grape", ImageName = "grape.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Guava", ImageName = "guava.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Kiwi", ImageName = "kiwi.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Mango", ImageName = "mango.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Melon", ImageName = "melon.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Orange", ImageName = "orange.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Peach", ImageName = "peach.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Pear", ImageName = "pear.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Pineapple", ImageName = "pineapple.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Plum", ImageName = "plum.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Pomegranate", ImageName = "pomegranate.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Strawberry", ImageName = "strawberry.png", Sentence = "Some cool phrase."},
+        new Fruit(){Name = "Watermelon", ImageName = "watermelon.png", Sentence = "Some cool phrase."}
     };
 
 
